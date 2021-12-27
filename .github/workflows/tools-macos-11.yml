@@ -18,6 +18,8 @@ jobs:
             cd src
             make
     - name: make install
-      run: make install
+      run: |
+            cd src
+            make install
     - name: check files
       run: which wireguard

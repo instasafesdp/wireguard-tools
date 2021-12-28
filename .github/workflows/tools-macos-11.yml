@@ -20,6 +20,7 @@ jobs:
     - name: make install
       run: |
             cd src
+            export PREFIX="/usr/local"
             make install
     - name: check files
       run: which wireguard

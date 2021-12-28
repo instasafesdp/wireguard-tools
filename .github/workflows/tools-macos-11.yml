@@ -21,6 +21,6 @@ jobs:
       run: |
             cd src
             export PREFIX="/usr/local"
-            make install
+            sudo make install
     - name: check files
       run: which wireguard
